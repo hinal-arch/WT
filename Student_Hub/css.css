@@ -1,0 +1,568 @@
+/* =========================================================
+   StudentHub - Simple Blue Theme
+   No shadows
+   No hover animations
+   ========================================================= */
+
+/* =========================
+   HOME PAGE
+   ========================= */
+body:has(nav a[href="index.html"]) {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef6fb;
+    color: #17324d;
+}
+
+body:has(nav a[href="index.html"]) header {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body:has(nav a[href="index.html"]) nav {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #2f6f9f;
+    padding: 12px;
+}
+
+body:has(nav a[href="index.html"]) nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body:has(nav a[href="index.html"]) section {
+    border: 2px solid #2f6f9f;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin: 15px auto;
+    max-width: 1000px;
+}
+
+body:has(nav a[href="index.html"]) .small-image {
+    width: 100%;
+    max-width: 960px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+}
+
+body:has(nav a[href="index.html"]) footer {
+    text-align: center;
+    background-color: #163a5f;
+    color: white;
+    padding: 15px;
+}
+
+
+/* =========================
+   ABOUT PAGE
+   ========================= */
+body:has(main > section + section):not(:has(.student-info)) {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4fb;
+    margin: 0;
+}
+
+body:has(main > section + section):not(:has(.student-info)) header {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body:has(main > section + section):not(:has(.student-info)) main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+body:has(main > section + section):not(:has(.student-info)) section {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+body:has(main > section + section):not(:has(.student-info)) h2 {
+    color: #1d5d8f;
+}
+
+body:has(main > section + section):not(:has(.student-info)) footer {
+    text-align: center;
+    padding: 15px;
+    color: #526b7d;
+}
+
+
+/* =========================
+   EVENTS PAGE
+   ========================= */
+body:has(article h2) {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4fb;
+    margin: 0;
+}
+
+body:has(article h2) header {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body:has(article h2) article {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    margin: 20px;
+    padding: 15px;
+}
+
+body:has(article h2) article h2 {
+    color: #1d5d8f;
+}
+
+body:has(article h2) footer {
+    text-align: center;
+    padding: 10px;
+    color: #526b7d;
+}
+
+
+/* =========================
+   FAQ PAGE
+   ========================= */
+body:has(section h2 + p):not(:has(.student-info)) {
+    background-color: #eaf4fb;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+body:has(section h2 + p):not(:has(.student-info)) header {
+    background-color: #163a5f;
+    color: white;
+    padding: 15px;
+}
+
+body:has(section h2 + p):not(:has(.student-info)) section {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    padding: 20px;
+    margin: 20px;
+}
+
+body:has(section h2 + p):not(:has(.student-info)) h2 {
+    color: #1d5d8f;
+}
+
+body:has(section h2 + p):not(:has(.student-info)) p {
+    color: #36566e;
+}
+
+body:has(section h2 + p):not(:has(.student-info)) footer {
+    padding: 10px;
+}
+
+
+/* =========================
+   FEEDBACK PAGE
+   ========================= */
+body:has(#feedback) {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4fb;
+    margin: 0;
+    color: #17324d;
+}
+
+body:has(#feedback) header {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body:has(#feedback) main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+body:has(#feedback) form {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    padding: 25px;
+}
+
+body:has(#feedback) label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+body:has(#feedback) textarea {
+    width: 300px;
+    height: 120px;
+    border: 1px solid #6fa3c5;
+    padding: 8px;
+}
+
+body:has(#feedback) button {
+    display: block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #2f6f9f;
+    color: white;
+    border: 0;
+}
+
+
+/* =========================
+   LOGIN PAGE
+   ========================= */
+body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4fb;
+    margin: 0;
+}
+
+body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) header {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) form {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    padding: 25px;
+}
+
+body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #17324d;
+}
+
+body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #6fa3c5;
+}
+
+body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #2f6f9f;
+    color: white;
+    border: 0;
+}
+
+
+/* =========================
+   PROFILE PAGE
+   ========================= */
+body:has(section p:first-of-type):not(:has(.student-info)):not(:has(#department)) {
+    background-color: #eaf4fb;
+    color: #17324d;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+body:has(section p:first-of-type):not(:has(.student-info)):not(:has(#department)) header {
+    background-color: #163a5f;
+    color: white;
+    padding: 10px;
+    border-bottom: 3px solid #4b91bd;
+}
+
+body:has(section p:first-of-type):not(:has(.student-info)):not(:has(#department)) section {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    padding: 20px;
+    margin: 20px;
+}
+
+body:has(section p:first-of-type):not(:has(.student-info)):not(:has(#department)) h1 {
+    color: white;
+}
+
+body:has(section p:first-of-type):not(:has(.student-info)):not(:has(#department)) h2 {
+    color: #1d5d8f;
+}
+
+body:has(section p:first-of-type):not(:has(.student-info)):not(:has(#department)) p {
+    color: #36566e;
+}
+
+
+/* =========================
+   REGISTER PAGE
+   ========================= */
+body:has(#department):has(#address):has(input[type="radio"]) {
+    background-color: #eaf4fb;
+    text-align: center;
+    color: #17324d;
+    font-family: Arial, sans-serif;
+}
+
+body:has(#department):has(#address):has(input[type="radio"]) > h2 {
+    background-color: #163a5f;
+    color: white;
+    padding: 15px;
+    border-bottom: 3px solid #4b91bd;
+}
+
+body:has(#department):has(#address):has(input[type="radio"]) form {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    padding: 20px;
+}
+
+body:has(#department):has(#address):has(input[type="radio"]) label {
+    color: #1d5d8f;
+    font-weight: bold;
+}
+
+body:has(#department):has(#address):has(input[type="radio"]) input,
+body:has(#department):has(#address):has(input[type="radio"]) select,
+body:has(#department):has(#address):has(input[type="radio"]) textarea {
+    border: 1px solid #6fa3c5;
+    padding: 7px;
+    margin: 5px;
+}
+
+body:has(#department):has(#address):has(input[type="radio"]) input[type="radio"],
+body:has(#department):has(#address):has(input[type="radio"]) input[type="checkbox"] {
+    accent-color: #2f6f9f;
+}
+
+body:has(#department):has(#address):has(input[type="radio"]) textarea {
+    background-color: #f3f9fd;
+}
+
+
+/* =========================
+   DASHBOARD PAGE
+   ========================= */
+body:has(.student-info):has(.cards):has(.medals) {
+    background-color: #eaf4fb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #17324d;
+}
+
+body:has(.student-info):has(.cards):has(.medals) header {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body:has(.student-info):has(.cards):has(.medals) header h1 {
+    margin: 0;
+}
+
+body:has(.student-info):has(.cards):has(.medals) nav {
+    background-color: #2f6f9f;
+    padding: 10px;
+    text-align: center;
+}
+
+body:has(.student-info):has(.cards):has(.medals) nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+body:has(.student-info):has(.cards):has(.medals) main {
+    padding: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .student-info,
+body:has(.student-info):has(.cards):has(.medals) .details {
+    background-color: white;
+    border: 1px solid #c5dce9;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px auto;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .student-info h2,
+body:has(.student-info):has(.cards):has(.medals) h2 {
+    color: #163a5f;
+    text-align: center;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .student-info p {
+    display: inline-block;
+    margin: 8px 15px;
+    color: #17324d;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .card {
+    background-color: white;
+    border: 1px solid #a9cfe5;
+    border-radius: 6px;
+    padding: 15px;
+    width: 145px;
+    text-align: center;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .card h3 {
+    color: #2f7fb5;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .card p {
+    color: #36566e;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .score {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1d5d8f;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .details p {
+    padding: 8px;
+    border-bottom: 1px solid #d6e4ec;
+    color: #36566e;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .details p:last-child {
+    border-bottom: none;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .medals {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .medal {
+    background-color: #f5faff;
+    border: 1px solid #e0b93b;
+    border-radius: 6px;
+    padding: 12px;
+    width: 160px;
+    text-align: center;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .medal-icon {
+    font-size: 38px;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .medal p {
+    font-weight: bold;
+    color: #36566e;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .attendance {
+    text-align: center;
+}
+
+body:has(.student-info):has(.cards):has(.medals) .attendance-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1d5d8f;
+}
+
+body:has(.student-info):has(.cards):has(.medals) footer {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+body:has(.student-info):has(.cards):has(.medals) footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   ADMIN PAGE
+   ========================= */
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4fb;
+    margin: 0;
+}
+
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) header {
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #17324d;
+}
+
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) form {
+    background-color: white;
+    border: 1px solid #9fc3dc;
+    padding: 25px;
+}
+
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) input {
+    border: 1px solid #6fa3c5;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #2f6f9f;
+    color: white;
+    border: 0;
+}
+
+body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #526b7d;
+}
+
+
+/* =========================
+   CONTACT PAGE
+   ========================= */
+/* contact.html originally contains no CSS. */

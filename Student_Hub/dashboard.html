@@ -4,65 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Student Dashboard</title>
 
-    <style>
-        body {
-            background-color: lightblue;
-            font-family: Arial;
-            margin: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: rgb(162, 234, 162);
-            color: rgb(0, 0, 0);
-            padding: 15px;
-            border-bottom: 4px solid rgb(99, 221, 255);
-        }
-
-        nav {
-            background-color: rgb(152, 95, 152);
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            color: white;
-            margin: 20px;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            background-color: rgb(222, 222, 90);
-            border: 3px solid orange;
-            padding: 20px;
-        }
-
-        h2 {
-            color: rgb(159, 24, 24);
-        }
-
-        p {
-            color: rgb(119, 119, 139);
-        }
-
-        footer {
-            background-color: darkblue;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+ <link rel="stylesheet" href="css.css">
 
 </head>
 
@@ -72,25 +16,106 @@
         <h1>Student Dashboard</h1>
     </header>
 
-    <nav aria-label="Dashboard Navigation">
-        <ul>
-            <li>Profile</li>
-            <li>Events</li>
-            <li>Settings</li>
-        </ul>
-    </nav>
+    
 
     <main>
 
-        <section>
-            <h2>Overview</h2>
-            <p>Dashboard content.</p>
-        </section>
+        <div class="student-info">
+            <h2>Student Information</h2>
+
+            <p><b>Name:</b> Rahul Patel</p>
+            <p><b>Roll No:</b> 25AIML001</p>
+            <p><b>Department:</b> AIML</p>
+            <p><b>Semester:</b> 2nd Semester</p>
+        </div>
+
+
+        <h2>Academic Performance</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Overall Score</h3>
+                <p class="score">85%</p>
+            </div>
+
+            <div class="card">
+                <h3>Attendance</h3>
+                <p class="score">92%</p>
+            </div>
+
+            <div class="card">
+                <h3>Assignments</h3>
+                <p class="score">18/20</p>
+            </div>
+
+            <div class="card">
+                <h3>Projects</h3>
+                <p class="score">4</p>
+            </div>
+
+        </div>
+
+
+        <div class="details">
+
+            <h2>Subject Scores</h2>
+
+            <p>Web Development <b>88%</b></p>
+            <p>Python <b>91%</b></p>
+            <p>Mathematics <b>82%</b></p>
+            <p>Database <b>85%</b></p>
+            <p>Artificial Intelligence <b>80%</b></p>
+
+        </div>
+
+
+        <div class="details">
+
+            <h2>Medals & Achievements</h2>
+
+            <div class="medals">
+
+                <div class="medal">
+                    <div class="medal-icon">🥇</div>
+                    <p>1st Prize - Coding Competition</p>
+                </div>
+
+                <div class="medal">
+                    <div class="medal-icon">🥈</div>
+                    <p>2nd Prize - Project Exhibition</p>
+                </div>
+
+                <div class="medal">
+                    <div class="medal-icon">🏆</div>
+                    <p>Best Student Project Award</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="details attendance">
+
+            <h2>Attendance Details</h2>
+
+            <p>Present</p>
+            <p class="attendance-number">92 Days</p>
+
+            <p>Absent</p>
+            <p><b>8 Days</b></p>
+
+            <p>Total Classes</p>
+            <p><b>100</b></p>
+
+        </div>
 
     </main>
 
+
     <footer>
-        <p>StudentHub</p>
+        <p>StudentHub © 2026</p>
     </footer>
 
 </body>

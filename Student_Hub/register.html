@@ -5,92 +5,145 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Student Registration</title>
 
-<style>
-    body {
-        background-color: lightblue;
-        text-align: center;
-        color: darkblue;
-    }
-
-    h2 {
-        background-color: green;
-        color: white;
-        padding: 10px;
-        border: 2px solid darkgreen;
-    }
-
-    form {
-        background-color: lightyellow;
-        border: 3px solid purple;
-        padding: 20px;
-    }
-
-    label {
-        color: darkred;
-        font-weight: bold;
-    }
-
-    input, select, textarea {
-        border: 2px solid orange;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    input[type="radio"],
-    input[type="checkbox"] {
-        accent-color: green;
-    }
-
-    textarea {
-        background-color: lightpink;
-    }
-</style>
+ <link rel="stylesheet" href="css.css">
 
 </head>
 
 <body>
 
-    <h2>Student Registration</h2>
+<h2>Student Registration</h2>
 
-    <form>
+<form onsubmit="return registerStudent()">
 
-        <label>Name :</label><br>
-        <input type="text" placeholder="Enter Name"><br>
+    <label>Name :</label><br>
+    <input type="text" id="name" placeholder="Enter Name" required><br>
 
-        <label>Roll No. :</label><br>
-        <input type="text" placeholder="Enter Roll No."><br>
+    <label>Roll No. :</label><br>
+    <input type="text" id="roll" placeholder="25AIML001" required><br>
 
-        <label>Email :</label><br>
-        <input type="text" placeholder="Enter Email"><br>
+    <label>Email :</label><br>
+    <input type="text" id="email" placeholder="Enter Email" required><br>
 
-        <label>Password :</label><br>
-        <input type="password" placeholder="Password"><br>
+    <label>Password :</label><br>
+    <input type="password" id="password" placeholder="Password" required><br>
 
-        <label>Gender</label><br>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-        <input type="radio" name="gender"> Other
-        <br><br>
+<label>Gender</label><br>
 
-        <label>Department</label><br>
-        <select>
-            <option>CE</option>
-            <option>IT</option>
-            <option>AIML</option>
-            <option>EC</option>
-        </select>
-        <br><br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
 
-        <label>Hobbies</label><br>
-        <input type="checkbox"> Reading
-        <input type="checkbox"> Swimming
-        <input type="checkbox"> Sport
-        <br><br>
+    <br><br>
 
-        <label>Address</label><br>
-        <textarea rows="4" cols="30"></textarea>
+    <label>Department</label><br>
 
-    </form>
+    <select id="department">
+        <option value="">Select Department</option>
+        <option value="CE">CE</option>
+        <option value="IT">IT</option>
+        <option value="AIML">AIML</option>
+        <option value="EC">EC</option>
+    </select>
+
+    <br><br>
+
+    <label>Hobbies</label><br>
+
+    <input type="checkbox" id="reading"> Reading
+    <input type="checkbox" id="swimming"> Swimming
+    <input type="checkbox" id="sport"> Sport
+
+    <br><br>
+
+    <label>Address</label><br>
+    <textarea id="address" rows="4" cols="30"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Register">
+    
+    <input type="reset" value="Reset">
+
+</form>
+
+<script>
+
+function registerStudent() {
+
+    let name = document.getElementById("name").value;
+    let roll = document.getElementById("roll").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+     
+    let department = document.getElementById("department").value;
+    let address = document.getElementById("address").value;
+
+   let gender = document.querySelector('input[name="gender"]:checked');
+
+  if (!gender) {
+    alert("Please select your gender");
+    return false;
+    }
+
+    gender = gender.value;
+
+  
+    if (name == "") {
+        alert("Please enter your Name");
+        return false;
+    }
+
+
+ 
+    let rollPattern = /^[0-9]{2}[A-Z]{4}[0-9]{3}$/;
+
+    if (!rollPattern.test(roll)) {
+        alert("Please enter Roll No. like 25AIML001");
+        return false;
+    }
+
+
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid Email");
+        return false;
+    }
+
+
+    let passwordPattern = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
+
+    if (!passwordPattern.test(password)) {
+        alert("Password must be at least 6 characters and contain uppercase and lowercase letters");
+        return false;
+    }
+
+
+    if (gender == "") {
+        alert("Please select Gender");
+        return false;
+    }
+
+
+    if (department == "") {
+        alert("Please select Department");
+        return false;
+    }
+
+
+    if (address == "") {
+        alert("Please enter your Address");
+        return false;
+    }
+
+
+    alert("Registration Successful!");
+
+    return false;
+}
+
+</script>
 
 </body>
 </html>
