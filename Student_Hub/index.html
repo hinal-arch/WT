@@ -12,6 +12,12 @@
 <body>
 
 <header>
+
+    <header>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="openMenu">☰</button>
+
     <h1 style="text-align:center;">StudentHub</h1>
 
     <nav aria-label="Main Navigation">
@@ -26,6 +32,30 @@
         <a href="admin.html">Admin</a>
         <a href="faq.html">FAQ</a>
     </nav>
+
+</header>
+
+
+<div class="side-menu" id="sideMenu">
+
+  
+    <button class="close-menu" id="closeMenu">✕</button>
+
+    <div class="student-info">
+        <h2>25AIML004</h2>
+        <p>Hinalkumar</p>
+    </div>
+
+    <div class="side-links">
+        <a href="profile.html">👤 Profile</a>
+        <a href="about.html">ℹ️ About</a>
+        <a href="events.html">📅 Events</a>
+        <a href="faq.html">❓ FAQ</a>
+    </div>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
 </header>
 
 <main>
@@ -48,10 +78,46 @@
 </section>
 
 </main>
+<script>
 
+    const openMenu = document.getElementById("openMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    const sideMenu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+
+
+    // Open menu
+    openMenu.addEventListener("click", function () {
+
+        sideMenu.classList.add("active");
+        overlay.classList.add("active");
+
+    });
+
+
+    // Close menu
+    closeMenu.addEventListener("click", function () {
+
+        sideMenu.classList.remove("active");
+        overlay.classList.remove("active");
+
+    });
+
+
+    // Close menu when clicking outside
+    overlay.addEventListener("click", function () {
+
+        sideMenu.classList.remove("active");
+        overlay.classList.remove("active");
+
+    });
+
+</script>
 <footer>
     <p> 2026 StudentHub</p>
 </footer>
+
+
 
 </body>
 </html>
