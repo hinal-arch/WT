@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <link rel="stylesheet" href="css.css">
+    <title>StudentHub - Events</title>
 
+    <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Upcoming Events</h1>
-</header>
+    <header>
+        <h1>Upcoming Events</h1>
+    </header>
 
-<main>
+    <main>
 
-    <article>
-        <h2>Workshop</h2>
-        <p>Web Development Workshop.</p>
-    </article>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search event..."
+        >
 
-    <article>
-        <h2>Hackathon</h2>
-        <p>Annual Coding Competition.</p>
-    </article>
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Technical">Technical</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Sports">Sports</option>
+        </select>
 
-</main>
+        <select id="sortSelect">
 
+            <option value="">Sort By</option>
+
+            <option value="nameAsc">
+                Name A-Z
+            </option>
+
+            <option value="nameDesc">
+                Name Z-A
+            </option>
+
+            <option value="dateAsc">
+                Date: Oldest First
+            </option>
+
+            <option value="dateDesc">
+                Date: Newest First
+            </option>
+
+        </select>
+
+
+        <p id="loading" style="display:none;">
+            Loading events...
+        </p>
+
+
+        <p id="error"></p>
+
+
+        <div id="eventContainer"></div>
+
+
+        <div id="pagination"></div>
+
+    </main>
+
+
+    <script src="events.js"></script>
 
 </body>
+
 </html>

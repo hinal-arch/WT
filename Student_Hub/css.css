@@ -1,12 +1,4 @@
-/* =========================================================
-   StudentHub - Simple Blue Theme
-   No shadows
-   No hover animations
-   ========================================================= */
 
-/* =========================
-   HOME PAGE
-   ========================= */
 body:has(nav a[href="index.html"]) {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -63,9 +55,6 @@ body:has(nav a[href="index.html"]) footer {
 }
 
 
-/* =========================
-   ABOUT PAGE
-   ========================= */
 body:has(main > section + section):not(:has(.student-info)) {
     font-family: Arial, sans-serif;
     background-color: #eaf4fb;
@@ -102,9 +91,6 @@ body:has(main > section + section):not(:has(.student-info)) footer {
 }
 
 
-/* =========================
-   EVENTS PAGE
-   ========================= */
 body:has(article h2) {
     font-family: Arial, sans-serif;
     background-color: #eaf4fb;
@@ -172,9 +158,6 @@ body:has(section h2 + p):not(:has(.student-info)) footer {
 }
 
 
-/* =========================
-   FEEDBACK PAGE
-   ========================= */
 body:has(#feedback) {
     font-family: Arial, sans-serif;
     background-color: #eaf4fb;
@@ -224,9 +207,6 @@ body:has(#feedback) button {
 }
 
 
-/* =========================
-   LOGIN PAGE
-   ========================= */
 body:has(input#email):has(input#password):has(form button[type="submit"]):not(:has(#department)) {
     font-family: Arial, sans-serif;
     background-color: #eaf4fb;
@@ -311,9 +291,6 @@ body:has(section p:first-of-type):not(:has(.student-info)):not(:has(#department)
 }
 
 
-/* =========================
-   REGISTER PAGE
-   ========================= */
 body:has(#department):has(#address):has(input[type="radio"]) {
     background-color: #eaf4fb;
     text-align: center;
@@ -357,9 +334,6 @@ body:has(#department):has(#address):has(input[type="radio"]) textarea {
 }
 
 
-/* =========================
-   DASHBOARD PAGE
-   ========================= */
 body:has(.student-info):has(.cards):has(.medals) {
     background-color: #eaf4fb;
     font-family: Arial, sans-serif;
@@ -506,9 +480,6 @@ body:has(.student-info):has(.cards):has(.medals) footer p {
 }
 
 
-/* =========================
-   ADMIN PAGE
-   ========================= */
 body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(#department)) {
     font-family: Arial, sans-serif;
     background-color: #eaf4fb;
@@ -562,13 +533,6 @@ body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(
 }
 
 
-/* =========================
-   CONTACT PAGE
-   ========================= */
-/* contact.html originally contains no CSS. */
-/* =========================
-   HAMBURGER BUTTON
-========================= */
 
 .hamburger {
     position: absolute;
@@ -585,9 +549,6 @@ body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(
 }
 
 
-/* =========================
-   SIDE MENU
-========================= */
 
 .side-menu {
     position: fixed;
@@ -606,18 +567,12 @@ body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(
     transition: left 0.3s ease;
 }
 
-
-/* Menu open */
-
-.side-menu.active {
+ .side-menu.active {
     left: 0;
 }
 
 
-/* =========================
-   CLOSE BUTTON
-========================= */
-
+ 
 .close-menu {
     position: absolute;
     top: 15px;
@@ -634,10 +589,7 @@ body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(
 }
 
 
-/* =========================
-   STUDENT INFORMATION
-========================= */
-
+ 
 .student-info {
     padding: 70px 25px 25px 25px;
 
@@ -661,10 +613,7 @@ body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(
 }
 
 
-/* =========================
-   MENU LINKS
-========================= */
-
+ 
 .side-links {
     display: flex;
     flex-direction: column;
@@ -684,14 +633,9 @@ body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(
     transition: background 0.2s;
 }
 
-.side-links a:hover {
-    background-color: #f0f0f0;
-}
 
 
-/* =========================
-   DARK OVERLAY
-========================= */
+
 
 .overlay {
     position: fixed;
@@ -711,4 +655,40 @@ body:has(h1):has(form input[type="email"]):has(input[type="password"]):not(:has(
 
 .overlay.active {
     display: block;
+}
+
+#searchInput,
+#categoryFilter,
+#sortSelect {
+    padding: 10px;
+    margin: 5px;
+}
+
+#eventContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.event-card {
+    width: 250px;
+    padding: 15px;
+    background: rgb(95, 167, 114);
+    border: 1px solid #7d6f6f;
+    border-radius: 8px;
+}
+
+#pagination {
+    margin-top: 20px;
+}
+
+.page-button {
+    padding: 8px 12px;
+    margin: 3px;
+}
+
+.active {
+    background: rgb(104, 104, 133);
+    color: white;
 }

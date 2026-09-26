@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Tech Fest",
+        "category": "Technical",
+        "date": "2026-10-05",
+        "venue": "Main Auditorium"
+    },
+    {
+        "id": 2,
+        "name": "Coding Competition",
+        "category": "Technical",
+        "date": "2026-10-08",
+        "venue": "Computer Lab"
+    },
+    {
+        "id": 3,
+        "name": "Dance Competition",
+        "category": "Cultural",
+        "date": "2026-10-10",
+        "venue": "Open Ground"
+    },
+    {
+        "id": 4,
+        "name": "AI Workshop",
+        "category": "Workshop",
+        "date": "2026-10-12",
+        "venue": "Seminar Hall"
+    },
+    {
+        "id": 5,
+        "name": "Hackathon",
+        "category": "Technical",
+        "date": "2026-10-15",
+        "venue": "Innovation Lab"
+    },
+    {
+        "id": 6,
+        "name": "Music Night",
+        "category": "Cultural",
+        "date": "2026-10-18",
+        "venue": "College Ground"
+    },
+    {
+        "id": 7,
+        "name": "Web Development Workshop",
+        "category": "Workshop",
+        "date": "2026-10-20",
+        "venue": "Computer Lab"
+    },
+    {
+        "id": 8,
+        "name": "Sports Day",
+        "category": "Sports",
+        "date": "2026-10-22",
+        "venue": "Sports Ground"
+    },
+    {
+        "id": 9,
+        "name": "Cricket Tournament",
+        "category": "Sports",
+        "date": "2026-10-24",
+        "venue": "College Ground"
+    },
+    {
+        "id": 10,
+        "name": "Robotics Exhibition",
+        "category": "Technical",
+        "date": "2026-10-26",
+        "venue": "Exhibition Hall"
+    },
+    {
+        "id": 11,
+        "name": "Photography Contest",
+        "category": "Cultural",
+        "date": "2026-10-28",
+        "venue": "Art Gallery"
+    },
+    {
+        "id": 12,
+        "name": "Cyber Security Seminar",
+        "category": "Workshop",
+        "date": "2026-10-30",
+        "venue": "Seminar Hall"
+    },
+    {
+        "id": 13,
+        "name": "Football Tournament",
+        "category": "Sports",
+        "date": "2026-11-02",
+        "venue": "Sports Ground"
+    },
+    {
+        "id": 14,
+        "name": "Startup Meetup",
+        "category": "Workshop",
+        "date": "2026-11-05",
+        "venue": "Conference Hall"
+    },
+    {
+        "id": 15,
+        "name": "Annual Function",
+        "category": "Cultural",
+        "date": "2026-11-10",
+        "venue": "Main Auditorium"
+    }
+]
